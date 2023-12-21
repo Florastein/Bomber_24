@@ -168,15 +168,15 @@ public class MainActivity extends AppCompatActivity {
         btnMakeCall = findViewById(R.id.btnMakeCall);
 
         handler = new Handler();
-        startTimer();
+        //startTimer();
 
-        /*btnMakeCall.setOnClickListener(new View.OnClickListener() {
+        btnMakeCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startTimer();
+                startTimer();
 
             }
-        });*/
+        });
 
 
     }
@@ -205,8 +205,8 @@ public class MainActivity extends AppCompatActivity {
     private void initiatePhoneCall() {
         //String phoneNumber = editTextPhoneNumber.getText().toString().trim();
         // Replace this method with the code to initiate a phone call
-        //String phoneNumber = "tel:" + editTextPhoneNumber.toString().trim();
-        String phoneNumber = "tel:" + "0242697943"; // Replace with the desired phone number
+        String phoneNumber = "tel:" + editTextPhoneNumber.toString();
+        //String phoneNumber = "tel:" + "0242697943"; // Replace with the desired phone number
         Intent dialIntent = new Intent(Intent.ACTION_CALL, Uri.parse(phoneNumber));
         startActivity(dialIntent);
     }
