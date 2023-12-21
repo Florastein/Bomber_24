@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bomber 24"
+        android:background="@drawable/back"
+        android:layout_margin="5sp"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="30sp"/>
+
+
+    <EditText
+        android:id="@+id/editTextPhoneNumber"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:width="120sp"
+        android:ems="10"
+        android:layout_gravity="center"
+        android:inputType="phone"
+        android:hint="Enter Number Here..."/>
+    <!--<LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginStart="50sp">
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Number of Times: " />
+
+        <EditText
+            android:id="@+id/editTextCallCount"
+            android:layout_width="90sp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10sp"
+            android:ems="10"
+            android:inputType="number" />
+
+
+
+    </LinearLayout>-->
+
+    <Button
+        android:id="@+id/btnMakeCall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:onClick="makePhoneCall"
+        android:text="Call"
+        tools:ignore="MissingConstraints" />
+
+
+</LinearLayout>
